@@ -67,11 +67,11 @@
 			</section>
 		</div>
 	</main>
-	<footer class="main-footer">
+		<footer class="main-footer">
 			<div class="container">
 				<p class="footer-contacts" id="footer-contacts">Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-				<a>Как нас найти?</a><br>
+				<a href="" class="search-us">Как нас найти?</a><br>
 				Телефон: +7 (495) 666-02-66
 				</p>
 				<div class="footer-social">
@@ -90,34 +90,37 @@
 	</footer>
 	<section class="modal modal-login">
 		<h2>Личный кабинет</h2>
-		<p>Введите свой логин и пароль</p>
+		<p class="modal-description">Введите свой логин и пароль</p>
 		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
 			<p>
-				<label class="visually-hidden" for="login-icon-login">Логин</label>
-				<input id="login-icon-login" type="text" name="login" placeholder="Логин">
+				<label class="visually-hidden" for="user-login">Логин</label>
+				<input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
 			</p>
 			<p>
-				<label class="visually-hidden" for="login-icon-password">Пароль</label>
-				<input id="login-icon-password" type="password" name="password" placeholder="Пароль">
+				<label class="visually-hidden" for="user-password">Пароль</label>
+				<input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
 			</p>
-			<p class="login-password-info">
+			<p class="login-help">
 				<label class="login-checkbox">
-				<input class="visually-hidden" type="checkbox" name="remember">
-				<span class="checkbox-indicator"></span>
-				Запомните меня
-			</label>
+					<input class="visually-hidden" type="checkbox" name="remember">
+					<span class="checkbox-indicator"></span>
+					Запомните меня
+				</label>
 				<a class="restore" href="#">Я забыл пароль!</a>
 			</p>
 			<button class="button" type="submit">Войти</button>
 		</form>
-		<button class="modal-close" type="button">Закрыть</button> 
+		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button> 
 	</section>
 	<section class="modal modal-map">
 		<h2 class="visually-hidden">Как до нас добраться</h2>
-		<p>
-			<img src="img/map.jpg" width="766" height="560" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-		</p>
-		<button class="modal-close" type="button">Закрыть</button> 
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002876!2d30.320858715773994!3d59.93871916905456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sua!4v1572013392320!5m2!1sru!2sua" width="766" height="561" allowfullscreen=""></iframe>
+		<p><img src="img/map.jpg" width="766" height="561" alt="Наш адрес г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></p>
+		<button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button> 
 	</section>
+	
+	<!-- <div class="modal-overlay"></div> -->
+	<script src="js/popup.js"></script>
+	<script src="js/popupMap.js"></script>
 </body>
 </html>
