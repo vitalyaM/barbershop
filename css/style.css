@@ -1287,10 +1287,10 @@ input[type="radio"].visually-hidden {
 	-ms-transform: translateY(-10px);
 	-o-transform: translateY(-10px);
 	transform: translateY(-10px);}
-	100% {-webkit-transform: 0;
-	-ms-transform: 0;
-	-o-transform: 0;
-	transform: 0;}
+	100% {-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);}
 }
 
 .modal-show {
