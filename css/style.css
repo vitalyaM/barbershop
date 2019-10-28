@@ -880,6 +880,10 @@ input[type="radio"].visually-hidden {
 	width: 380px;
 }
 
+.product-availability {
+	margin-right: auto;
+}
+
 .product-article {
 	text-align: right;
 	color: #aeaeae;
